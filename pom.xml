@@ -42,6 +42,14 @@
         </dependency>
     </dependencies>
 
+    <modules>
+        <module>spring-boot-custom-app-props</module>
+        <module>spring-boot-dev-tools-actuator</module>
+        <module>spring-boot-spring-core</module>
+    </modules>
+
+    <packaging>pom</packaging>
+
     <build>
         <plugins>
             <plugin>
