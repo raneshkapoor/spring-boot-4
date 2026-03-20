@@ -7,9 +7,9 @@
         <artifactId>spring-boot-4</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>spring-boot-dev-tools-actuator</artifactId>
-    <name>spring-boot-dev-tools-actuator</name>
-    <description>spring-boot-dev-tools-actuator</description>
+    <artifactId>spring-boot-hibernate-jpa</artifactId>
+    <name>spring-boot-hibernate-jpa</name>
+    <description>spring-boot-hibernate-jpa</description>
     <url/>
     <licenses>
         <license/>
@@ -27,25 +27,6 @@
         <java.version>17</java.version>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
