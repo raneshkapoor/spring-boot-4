@@ -17,7 +17,7 @@ public class SpringBootHibernateJpaApplication {
     @Bean
     public CommandLineRunner commandLineRunner(StudentDAO  studentDAO) {
         return runner -> {
-            createStudents(studentDAO);
+            deleteStudent(studentDAO);
         };
     }
 
@@ -53,6 +53,36 @@ public class SpringBootHibernateJpaApplication {
         System.out.println("####### Saved students ... ID : "  + student2.getId());
         System.out.println("####### Saved students ... ID : "  + student3.getId());
 
+    }
+
+    private void readStudent(StudentDAO studentDAO) {
+        System.out.println("####### Reading student ...");
+
+        Student student = studentDAO.findById(2);
+
+        System.out.println("####### Read student ... : "  + student);
+    }
+
+    private void updateStudent(StudentDAO studentDAO) {
+        System.out.println("####### Reading student ...");
+
+        Student student = studentDAO.findById(2);
+
+        System.out.println("####### Read student ... : "  + student);
+
+        student.setLastName("Does");
+
+        System.out.println("####### Update student ...");
+
+        studentDAO.update(student);
+
+        System.out.println("####### Update student ... : "  + student);
+    }
+
+    private  void deleteStudent(StudentDAO studentDAO) {
+        System.out.println("####### Deleting student ...");
+
+        studentDAO.delete(2);
     }
 
 }
