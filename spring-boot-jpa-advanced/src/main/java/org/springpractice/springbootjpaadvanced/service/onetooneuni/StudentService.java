@@ -1,6 +1,5 @@
 package org.springpractice.springbootjpaadvanced.service.onetooneuni;
 
-import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Service;
 import org.springpractice.springbootjpaadvanced.entity.onetooneuni.Laptop;
 import org.springpractice.springbootjpaadvanced.entity.onetooneuni.Student;
@@ -22,7 +21,7 @@ public class StudentService {
         this.studentRepository = studentRepository;
     }
 
-    @PostConstruct
+    //@PostConstruct
     public void init() {
 
         System.out.println("One to One Uni Directional Mapping");
