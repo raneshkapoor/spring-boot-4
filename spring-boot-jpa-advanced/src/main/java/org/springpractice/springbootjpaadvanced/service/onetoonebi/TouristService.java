@@ -22,7 +22,7 @@ public class TouristService {
         this.touristRepository = touristRepository;
     }
 
-    @PostConstruct
+    //@PostConstruct
     public void init() {
 
         System.out.println("One to One Bi Directional Mapping");
