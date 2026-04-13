@@ -22,7 +22,7 @@ public class CitizenService {
         this.addressRepository = addressRepository;
     }
 
-    @PostConstruct
+    //@PostConstruct
     public void init() {
 
         System.out.println("One to Many Bi Directional Mapping");
